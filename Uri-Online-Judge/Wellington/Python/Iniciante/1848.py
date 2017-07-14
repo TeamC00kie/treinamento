@@ -1,18 +1,16 @@
 # -*- coding: utf-8 -*-
 
-binario = {"---":0 ,"--*":1, "-*-":2, "-**":3, "*--":4, "*-*":5, "**-":6, "***":7}
-gritos = 0
+bi = {'---': 0, '--*': 1, '-*-': 2, '-**': 3, '*--': 4, '*-*': 5, '**-': 6, '***': 7}
+numeros = []
+for i in range(3):
+    soma = 0
+    while True:
+        entrada = raw_input()
+        if entrada == "caw caw":
+            break
+        soma += bi[entrada]
 
-linha = []
-soma = 0
-while gritos < 3:
-	entrada = raw_input()
-	if entrada == "caw caw":
-		linha.append(soma)
-		soma = 0
-		gritos += 1
-	else:
-		soma += binario[entrada]
+    numeros.append(soma)
 
-for x in linha:
-	print(x)
+for x in numeros:
+    print x
