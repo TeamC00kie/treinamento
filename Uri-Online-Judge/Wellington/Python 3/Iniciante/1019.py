@@ -1,5 +1,7 @@
+# -*- coding: utf-8 -*-
+
 n = int(input())
 hora = int(n/3600)
 minuto = int((n%3600)/60)
 segundo = int((n%3600)%60)
-print(str(int(hora)) + ':' + str(int(minuto)) + ':' + str(int(segundo)))
+print('{}:{}:{}'.format(hora, minuto, segundo))

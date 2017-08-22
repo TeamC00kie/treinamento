@@ -1,10 +1,7 @@
-linha = input().split(' ')
-a, b, c, d = linha
+# -*- coding: utf-8 -*-
 
-a = int(a)
-b = int(b)
-c = int(c)
-d = int(d)
+linha = list(map(int, input().split()))
+a, b, c, d = linha
 
 if b > c and d > a and c+d > a+b and c > 0 and d > 0 and a % 2 == 0:
     print('Valores aceitos')

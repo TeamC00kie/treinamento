@@ -1,7 +1,6 @@
-valores = input().split(' ')
-valores[0] = float(valores[0])
-valores[1] = float(valores[1])
-valores[2] = float(valores[2])
+# -*- coding: utf-8 -*-
+
+valores = list(map(float, input().split()))
 valores.sort(reverse=True)
 
 if valores[0] >= valores[1] + valores[2]:

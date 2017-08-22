@@ -1,9 +1,11 @@
-numeros = input().split(' ')
+# -*- coding: utf-8 -*-
+
+numeros = list(map(int, input().split()))
 
 ordenado = []
 
 for aux in numeros:
-	ordenado.append(int(aux))
+	ordenado.append(aux)
 
 ordenado.sort()
 for aux in ordenado:

@@ -1,7 +1,7 @@
-linha = input().split(' ')
+# -*- coding: utf-8 -*-
+
+linha = list(map(float, input().split()))
 x, y = linha
-x = float(x)
-y = float(y)
 
 if x > 0 and y > 0:
 	print('Q1')

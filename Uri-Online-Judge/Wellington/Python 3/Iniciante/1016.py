@@ -1,5 +1,7 @@
+# -*- coding: utf-8 -*-
+
 a = int(input())
 
 minutos = a * 2
 
-print(minutos ,'minutos')
+print('{} minutos'.format(minutos))

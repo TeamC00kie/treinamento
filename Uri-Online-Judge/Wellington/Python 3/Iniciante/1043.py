@@ -1,10 +1,9 @@
-linha = input().split(' ')
+# -*- coding: utf-8 -*-
+
+linha = list(map(float, input().split()))
 a, b, c = linha
-a = float(a)
-b = float(b)
-c = float(c)
 
 if abs(b-c) < a and a < b+c and abs(a-c) < b and b < a+c and abs(a-b) < c and c < a+b:
-	print('Perimetro = %.1f' % (a+b+c))
+	print('Perimetro = {:.1f}'.format(a+b+c))
 else:
-	print('Area = %.1f' % ((c * (a+b))/2))
+	print('Area = {:.1f}'.format((c * (a + b))/2))
